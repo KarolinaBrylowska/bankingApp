@@ -12,8 +12,18 @@ public class Account {
         this.balance=100;
     }
     public String details(){
-        String details="name: "+name+"\n surname"+surname+"\n account number"+accountNumber+"\nbalance"+balance;
+        String details="name: "+name+"\nsurname"+surname+"\naccount number"+accountNumber+"\nbalance"+balance;
         return details();
+    }
+    public void deposit(int deposit){
+        this.balance=balance + deposit;
+    }
+    public float getBalance(){
+        return balance;
+    }
+    public void  withdraw(int withdraw){
+        this.balance=balance - withdraw;
+
     }
 
 
