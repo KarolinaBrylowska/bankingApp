@@ -11,10 +11,11 @@ public class Account {
         this.accountNumber=1;
         this.balance=100;
     }
-    public String details(){
-        String details="name: "+name+"\nsurname"+surname+"\naccount number"+accountNumber+"\nbalance"+balance;
-        return details();
+    public String details() {
+        String details = "name: " + name + "\nsurname: " + surname + "\naccount number: " + accountNumber + "\nbalance: " + balance;
+        return details;
     }
+
     public void deposit(int deposit){
         this.balance=balance + deposit;
     }
